@@ -7,17 +7,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.*;
 import org.saucedemo.pages.*;
-//import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class StepDefinitions {
 
-    WebDriver driver;
-    LoginPage loginPage;
-    ProductsPage productsPage;
-    CartPage cartPage;
-    CheckoutPage checkoutPage;
-    ConfirmationPage confirmationPage;
+    private WebDriver driver;
+    private LoginPage loginPage;
+    private ProductsPage productsPage;
+    private CartPage cartPage;
+    private CheckoutPage checkoutPage;
+    private ConfirmationPage confirmationPage;
 
 
     @Before
@@ -34,7 +34,6 @@ public class StepDefinitions {
 
     @Given("I am on the Sauce Demo login page")
     public void i_am_on_the_sauce_demo_login_page() {
-       // driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
         loginPage = new LoginPage(driver);
     }

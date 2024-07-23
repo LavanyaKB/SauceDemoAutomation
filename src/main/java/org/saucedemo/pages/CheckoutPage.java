@@ -31,5 +31,4 @@ public class CheckoutPage {
     }
 }
 
-//add confirmation page elements here
 
